@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        .header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100px;
+            background-color:lightblue;
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 10px;
+            background-color: lightgoldenrodyellow;
+        }
+
+        .card {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: auto 1fr;
+            gap: 10px;
+            width: 300px;
+            margin: 10px;
+            background-color: lightseagreen;
+            text-align: center;
+        }
+
+        .card img {
+            width: 100%;
+            height: auto;
+        }
+
+        @media (max-width: 768px) {
+            .card {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Photo Gallery</h1>
+    </div>
+    <div class="gallery">
+        <div class="card">
+            <img src="https://tse3.mm.bing.net/th?id=OIF.KvpVEOIbUaELNmhVRdKThg&pid=Api&P=0&h=180" alt="Image 1">
+            <h3>Ravichandran Ashwin!</h3>
+            <p>As Team India gears up to face England in the second Test of the series in Visakhapatnam, all eyes will be on off-spinner Ravichandran Ashwin. The senior India bowler stands on the cusp of history with 496 Test wickets to his name. With four more wickets, he will become the only second Indian bowler to enter the 500-wicket club.</p>
+        </div>
+        <div class="card">
+            <img src="https://pbs.twimg.com/media/GE6dNngXIAA9xJ7?format=jpg&name=small" alt="Image 2">
+            <h3>Shamar Joseph!</h3>
+            <p>One of the first people involved in West Indies cricket to set eyes on Shamar Joseph has recalled the excitement at seeing him bowl. Roland Butcher, who played international cricket for England, was a West Indies selector until earlier this year and was present at various stages through Joseph's rapid rise which made global headlines with his 7 for 68 at the Gabba to bowl West Indies to a famous eight-run win despite an injured toe.
+                
+                </p>
+        </div>
+        <div class="card">
+            <img src="https://images.indianexpress.com/2024/02/IND-win-vs-SA-semifinal-U19.jpg?w=750" alt="Image 3">
+            <h3>India U19 into Finals!</h3>
+            <p>The young Team India created history on Tuesday as they clinched a certain victory from the mouth of Proteas to enter the finals of the Under-19 World Cup for the record 5th time. India's young star Sachin Dhas spearheaded Team India's resurgence with a stellar innings of 96 runs, propelling them to victory against a modest target of 245 runs in the first semi-final of the U-19 World Cup at Willowmoore Park.</p>
+        </div>
+        <div class="card">
+            <img src="https://s.yimg.com/fz/api/res/1.2/.BrXv51mSvV8HBCiEn25gA--~C/YXBwaWQ9c3JjaGRkO2ZpPWZpbGw7aD0zODQ7cT04MDt3PTUxMg--/https://s.yimg.com/am/60d/5f1aee4307b857e2e9da1ce29e335c08" alt="Image 3">
+            <h3>Kohli's Prescence in 3rd Test..!</h3>
+            <p>Team India coach Rahul Dravid said that the selectors will get in touch with the batter in the next few days and will make the necessary changes in the squad. "I think it's best to ask the selectors. I am sure they are the best people to answer ahead of the team selection for the next three Tests. We will get to that. I am sure there will be a selection over the next few days. We will connect with him and find out," Team India coach Rahul Dravid said.</p>
+        </div>
+        <!-- Add more photo cards as needed -->
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
